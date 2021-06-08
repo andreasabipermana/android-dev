@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - Download Importat file
+      - name: Download Importat file
         run: wget ${{ secrets.API_JSON }} -O app/src/main/res/raw/testagentcredentials.json 
       - name: Print contents in current directory
         run: ls -la app/src/main/res/raw/
